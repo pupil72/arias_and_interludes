@@ -4,3 +4,10 @@
 This app is only for Android and needs two libraries to be able to work: OpenCV (https://opencv.org/android/) and TarsosDSP (https://github.com/JorenSix/TarsosDSP)
 
 It includes the code of "follow me" a former, simpler version of the Optical Theremin published in Google Play.
+
+<!>@inproceedings{six2014tarsosdsp,
+  author      = {Joren Six and Olmo Cornelis and Marc Leman},
+  title       = {{TarsosDSP, a Real-Time Audio Processing Framework in Java}},
+  booktitle   = {{Proceedings of the 53rd AES Conference (AES 53rd)}}, 
+  year        =  2014
+}<--!>
