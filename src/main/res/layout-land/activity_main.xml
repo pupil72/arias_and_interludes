@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unitedsquares">
+
+        <TextView
+            android:id="@+id/app_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="#90303030"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="A &amp; I"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/app_title"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/app_title"
+                android:layout_centerHorizontal="true"
+                android:paddingRight="8dp">
+
+                <TextView
+                    android:id="@+id/prelude1"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@android:drawable/alert_dark_frame"
+                    android:backgroundTint="@color/main_text_color"
+                    android:gravity="center"
+                    android:text="1.\nINTRADA\nNancarrow I"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/prelude2"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@android:drawable/alert_dark_frame"
+                    android:backgroundTint="@color/main_text_color"
+                    android:gravity="center"
+                    android:text="2.\nARIA I\nCage: sonata XIII"
+                    app:layout_constraintStart_toEndOf="@+id/prelude1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/prelude3"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@android:drawable/alert_dark_frame"
+                    android:backgroundTint="@color/main_text_color"
+                    android:gravity="center"
+                    android:text="3.\nINTERLUDE I\n'on wood'"
+                    app:layout_constraintStart_toEndOf="@+id/prelude2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/prelude4"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@android:drawable/alert_dark_frame"
+                    android:backgroundTint="@color/main_text_color"
+                    android:gravity="center"
+                    android:text="4.\nARIA II\nIves: chorale"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/prelude1" />
+
+                <TextView
+                    android:id="@+id/prelude5"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@android:drawable/alert_dark_frame"
+                    android:backgroundTint="@color/main_text_color"
+                    android:gravity="center"
+                    android:text="5.\nINTERLUDE II\n'follow me'"
+                    app:layout_constraintStart_toEndOf="@id/prelude4"
+                    app:layout_constraintTop_toBottomOf="@+id/prelude2" />
+
+                <TextView
+                    android:id="@+id/prelude6"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@android:drawable/alert_dark_frame"
+                    android:backgroundTint="@color/main_text_color"
+                    android:gravity="center"
+                    android:text="6.\nARIA III\n'resonance'"
+                    app:layout_constraintStart_toEndOf="@id/prelude5"
+                    app:layout_constraintTop_toBottomOf="@id/prelude3" />
+
+                <TextView
+                    android:id="@+id/prelude7"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@android:drawable/alert_dark_frame"
+                    android:backgroundTint="@color/main_text_color"
+                    android:gravity="center"
+                    android:text="7.\nSALIDA\nI Nancarrow"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/prelude4" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+</RelativeLayout>

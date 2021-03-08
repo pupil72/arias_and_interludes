@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.opencv.android.JavaCameraView
+        android:id="@+id/color_blob_detection_activity_surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/inter_screen_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <marcoalunno.com.arias_and_inteludes.InterScreen
+            android:id="@+id/inter_screen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ToggleButton
+            android:id="@+id/apply_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/inter_screen"
+            android:layout_alignEnd="@+id/inter_screen"
+            android:layout_marginRight="9px"
+            android:layout_marginBottom="9px"
+            android:background="#7D404C9B"
+            android:enabled="false"
+            android:onClick="applyScreen"
+            android:rotationX="180"
+            android:rotationY="180"
+            android:text="apply\nscreen"
+            android:textOff="apply\nscreen"
+            android:textOn="remove\nscreen"
+            android:layout_alignRight="@+id/inter_screen" />
+
+        <LinearLayout
+            android:id="@+id/playerCommands"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#7D404C9B"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignBottom="@+id/inter_screen"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/gain_divisor"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:rotationX="180"
+                android:rotationY="180"
+                android:text="-30" />
+
+            <SeekBar
+                android:id="@+id/gain_seekbar"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:rotationX="180"
+                android:rotationY="180"
+                android:max="49"
+                android:progress="30"/>
+
+            <TextView
+                android:id="@+id/gain_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rotationX="180"
+                android:rotationY="180"
+                android:text="dB" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/noteName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:rotationX="180"
+        android:rotationY="180"/>
+
+</FrameLayout>

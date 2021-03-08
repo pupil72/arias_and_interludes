@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Arias and Interludes</string>
+    <string name="intrada">1. INTRADA - Nancarrow I</string>
+    <string name="aria1">2. ARIA I - Cage: Sonata XIII</string>
+    <string name="interlude1">3. INTERLUDE I - On wood</string>
+    <string name="aria2">4. ARIA II - After Ives</string>
+    <string name="interlude2">5. INTERLUDE II - Follow me</string>
+    <string name="aria3">6. ARIA III - Resonance</string>
+    <string name="salida">7. SALIDA - I Nancarrow</string>
+    <string name="start_pitch_detection">Start Pitch Detection</string>
+    <string name="stop_pitch_detection">Stop Pitch Detection</string>
+    <string name="play">Play</string>
+</resources>
