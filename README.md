@@ -5,7 +5,7 @@ This app is only for Android. It uses two libraries: OpenCV (https://opencv.org/
 
 It includes the code of "follow me" a former, simpler version of the Optical Theremin published in Google Play (https://play.google.com/store/apps/details?id=marcoalunno.optical_theremin&hl=it&gl=US).
 
-The code has been neither optimized nor tested on different Android devices beside my own cellphone. I developped it only for my personal use and comes <i>as is</i>. 
+The code has been neither optimized nor tested on different Android devices beside my own cellphone (a Moto G5 Plus, with an Android Orio 8.1 installed). I developped it only for my personal use and comes <i>as is</i>. 
 
 <!--@inproceedings{six2014tarsosdsp,
   author      = {Marco Alunno},
